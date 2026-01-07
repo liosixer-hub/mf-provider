@@ -14,4 +14,7 @@ export default defineConfig({
     assetPrefix: publicUrl,
     writeToDisk: false,
   },
+  output: {
+    assetPrefix: publicUrl,
+  },
 });
