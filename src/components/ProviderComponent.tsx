@@ -11,7 +11,7 @@ const Provider: React.FC = () => {
           className="logo-image"
         />
       </div>
-      <h1 className="title">Header</h1>
+      <h1 className="title">I am mf-provider</h1>
     </div>
   );
 };
