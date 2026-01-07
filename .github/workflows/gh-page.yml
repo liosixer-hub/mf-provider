@@ -39,14 +39,15 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        continue-on-error: true
         # with:
         #   enablement: true
 
       - name: Build mf-provider
         run: pnpm build
         env:
-          # 如果 Setup Pages 失败（例如本地测试），默认使用根路径
-          PUBLIC_URL: ${{ steps.pages.outputs.base_url || '/' }}
+          # 如果 Setup Pages 失败，回退到 /<repo_name>/，确保资源路径正确
+          PUBLIC_URL: ${{ steps.pages.outputs.base_url || format('/{0}/', github.event.repository.name) }}
 
       - name: Add 404.html
         run: cp dist/index.html dist/404.html || true
