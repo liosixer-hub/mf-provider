@@ -1,0 +1,101 @@
+{
+  "id": "header",
+  "name": "header",
+  "metaData": {
+    "name": "header",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "header"
+    },
+    "remoteEntry": {
+      "name": "static/js/header.e35c1fc5.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "header",
+    "pluginVersion": "0.22.0",
+    "prefetchInterface": false,
+    "publicPath": "/mf-provider/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "header:react-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/396.72bf7fc7.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "header:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/75.88eb8eb4.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "."
+      ]
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "path": ".",
+      "id": "header:.",
+      "name": ".",
+      "requires": [
+        "react"
+      ],
+      "file": "src/components/ProviderComponent.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_default_export.1df2cd48.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "static/css/async/__federation_expose_default_export.4f1887cc.css"
+          ],
+          "async": []
+        }
+      }
+    }
+  ]
+}
