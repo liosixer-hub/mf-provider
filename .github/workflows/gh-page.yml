@@ -40,9 +40,11 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
         env:
           PUBLIC_URL: ${{ steps.pages.outputs.base_url }}/
 
